@@ -139,10 +139,13 @@ INSERT INTO customers(customer_id, company_name, contact_name, address, city, po
   </details>
 
 ```SQL
+UPDATE customers
+SET postal_code = '11122'
+WHERE customer_id = 'SHIRE'cusd
 
 ```
 
-* [ ] ***list orders grouped and ordered by customer company name showing the number of orders per customer company name. _Rattlesnake Canyon Grocery_ should have 18 orders***
+- [x] **_list orders grouped and ordered by customer company name showing the number of orders per customer company name. *Rattlesnake Canyon Grocery* should have 18 orders_**
 
   <details><summary>hint</summary>
 
