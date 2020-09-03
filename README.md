@@ -154,10 +154,16 @@ WHERE customer_id = 'SHIRE'cusd
   </details>
 
 ```SQL
+SELECT c.company_name, count(o) order_count
+FROM customers c
+JOIN orders o
+ON	c.customer_id = o.customer_id
+GROUP BY company_name
+ORDER BY company_name
 
 ```
 
-* [ ] ***list customers by contact name and the number of orders per contact name. Sort the list by the number of orders in descending order. _Jose Pavarotti_ should be at the top with 31 orders followed by _Roland Mendal_ with 30 orders. Last should be _Francisco Chang_ with 1 order***
+- [x] **_list customers by contact name and the number of orders per contact name. Sort the list by the number of orders in descending order. *Jose Pavarotti* should be at the top with 31 orders followed by *Roland Mendal* with 30 orders. Last should be *Francisco Chang* with 1 order_**
 
   <details><summary>hint</summary>
 
