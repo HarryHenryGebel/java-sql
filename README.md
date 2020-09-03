@@ -141,7 +141,7 @@ INSERT INTO customers(customer_id, company_name, contact_name, address, city, po
 ```SQL
 UPDATE customers
 SET postal_code = '11122'
-WHERE customer_id = 'SHIRE'cusd
+WHERE customer_id = 'SHIRE'
 
 ```
 
