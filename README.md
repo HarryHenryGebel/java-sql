@@ -57,7 +57,7 @@ WHERE postal_code = '1010'
 
 ```
 
-* [ ] ***find the phone number for the supplier with the id 11. Should be (010) 9984510***
+- [x] **_find the phone number for the supplier with the id 11. Should be (010) 9984510_**
 
   <details><summary>hint</summary>
 
