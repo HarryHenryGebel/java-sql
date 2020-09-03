@@ -107,10 +107,12 @@ WHERE length(company_name) > 20
   </details>
 
 ```SQL
+SELECT * FROM customers
+WHERE upper(contact_title) LIKE upper('%market%')
 
 ```
 
-* [ ] ***add a customer record for***
+- [x] **_add a customer record for_**
 - customer id is 'SHIRE'
 - company name is 'The Shire'
 - contact name is 'Bilbo Baggins'
