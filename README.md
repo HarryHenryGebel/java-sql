@@ -201,7 +201,7 @@ ORDER BY city
 
 Note: This step does not use PostgreSQL!
 
-* [ ] ***Take the following data and normalize it into a 3NF database***
+- [x] **_Take the following data and normalize it into a 3NF database_**
 
 | Person Name | Pet Name | Pet Type | Pet Name 2 | Pet Type 2 | Pet Name 3 | Pet Type 3 | Fenced Yard | City Dweller |
 | ----------- | -------- | -------- | ---------- | ---------- | ---------- | ---------- | ----------- | ------------ |
@@ -211,56 +211,50 @@ Note: This step does not use PostgreSQL!
 
 Below are some empty tables to be used to normalize the database
 
-|            |            |            |            |            |            |            |            |            |
-|------------|------------|------------|------------|------------|------------|------------|------------|------------|
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-
-Table Name:
-
-|            |            |            |            |            |            |            |            |            |
-|------------|------------|------------|------------|------------|------------|------------|------------|------------|
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-
-Table Name:
-
-|            |            |            |            |            |            |            |            |            |
-|------------|------------|------------|------------|------------|------------|------------|------------|------------|
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-
-Table Name:
-
-|            |            |            |            |            |            |            |            |            |
-|------------|------------|------------|------------|------------|------------|------------|------------|------------|
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
-|            |            |            |            |            |            |            |            |            |
 - Not all of the cells will contain data in the final solution
 - Feel free to edit these tables as necessary
 
 Table Name: pets
 
+| id  | pet_name   | type_id |
+| --- | ---------- | ------- |
+| 1   | Ellie      | 4       |
+| 2   | Joe        | 5       |
+| 3   | Ginger     | 4       |
+| 4   | Tiger      | 3       |
+| 5   | Miss Kitty | 3       |
+| 6   | Toby       | 1       |
+| 7   | Bubble     | 2       |
+
+Table Name: people
+
+| id  | person_name | fenced_yard | city_dweller |
+| --- | ----------- | ----------- | ------------ |
+| 1   | Jane        | false       | true         |
+| 2   | Bob         | false       | false        |
+| 3   | Sam         | true        | false        |
+
+Table Name: people_to_pets
+
+| id  | person_id | pet_id |
+| --- | --------- | ------ |
+| 1   | 1         | 1      |
+| 2   | 1         | 4      |
+| 3   | 1         | 6      |
+| 4   | 2         | 2      |
+| 5   | 3         | 3      |
+| 6   | 3         | 5      |
+| 7   | 3         | 7      |
+
+Table Name: pet_types
+
+| id  | type   |
+| --- | ------ |
+| 1   | Turtle |
+| 2   | Fish   |
+| 3   | Cat    |
+| 4   | Dog    |
+| 5   | Horse  |
 
 ---
 
