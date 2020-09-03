@@ -188,6 +188,12 @@ ORDER BY order_count desc
   </details>
 
 ```SQL
+SELECT c.city, count(o) order_count
+FROM orders o
+JOIN customers c
+ON o.customer_id = c.customer_id
+GROUP BY city
+ORDER BY city
 
 ```
 
