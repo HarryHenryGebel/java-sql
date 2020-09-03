@@ -44,7 +44,7 @@ WHERE city = 'London'
 
 ```
 
-* [ ] ***find all customers with postal code 1010. Returns 3 customers***
+- [x] **_find all customers with postal code 1010. Returns 3 customers_**
 
   <details><summary>hint</summary>
 
@@ -52,6 +52,8 @@ WHERE city = 'London'
   </details>
 
 ```SQL
+SELECT * FROM customers
+WHERE postal_code = '1010'
 
 ```
 
